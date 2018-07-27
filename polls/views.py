@@ -3,6 +3,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.template import loader
 from .models import Question, Choice
 from django.urls import reverse
+from django.views import generic
 
 class IndexView(generic.ListView):
     template_name = 'polls/index.html'
